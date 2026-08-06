@@ -1,6 +1,6 @@
 context:
   name: libtins
-  version: "4.5"
+  version: "4.6"
 
 package:
   name: ${{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/mfontanini/${{ name|lower }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 6ff5fe1ada10daef8538743dccb9c9b3e19d05d028ffdc24838e62ff3fc55841
+  sha256: 37a9cc407929c56c2081e717347cac455287ba354016bad5bad6243d1f0a4a7a
   patches:
-    - 0001-fix-cmake-minimum-required-version.patch 
+    - 0001-fix-cmake-minimum-required-version.patch
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
